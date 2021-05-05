@@ -10,7 +10,7 @@ export default function Header() {
   const { t } = useTranslation('common')
   const [switchSound] = useSound('/sound/switchsound.mp3')
   return (
-    <header className="relative fixed z-20 w-full bg-white dark:bg-darkbg h-24 px-8 ">
+    <header className="relative fixed z-20 w-full bg-white dark:bg-darkbg h-6 py-8 px-8 ">
       <nav className="container flex items-center justify-between h-full max-w-6xl mx-auto">
         <div className=" ">
           <Menu />

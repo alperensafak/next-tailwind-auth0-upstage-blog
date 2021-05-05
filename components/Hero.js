@@ -12,47 +12,25 @@ const Hero = (props) => {
 
   return (
     <div className="container h-screen mx-auto flex px-5 py-20 md:flex-row flex-col-reverse items-center dark:bg-darkbg">
-      <div className="lg:md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center dark:bg-darkbg  ">
-        <motion.div
-          initial={{
-            opacity: 0,
-            marginTop: 20
-          }}
-          animate={{ opacity: 1, marginTop: 0 }}
-          transition={{
-            duration: 0.8
-          }}
-        >
-          <h2 className=" relative mb-4 text-4xl font-black leading-none text-center text-black lg:text-5xl xl:text-6xl md:text-left font-title dark:text-white">
+      <div className="lg:md:w-1/2 -mt-6 md:mt-0 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left md:mb-0 items-center text-center dark:bg-darkbg  ">
+        <div>
+          <h2 className=" relative top-5 md:top-0 text-4xl font-black leading-none text-center text-black lg:text-5xl xl:text-6xl md:text-left font-title dark:text-white">
             {t('h-1')}
-            <motion.span
-              initial={{
-                scale: 0,
-                opacity: 0
-              }}
-              animate={{
-                scale: 1,
-                opacity: 1
-              }}
-              transition={{
-                type: 'spring'
-              }}
-              className="relative inline-block w-auto   ml-2 "
-            >
+            <span className="relative inline-block w-auto   ml-2 ">
               <span className="absolute  w-full h-[calc(100%-1.3rem)] mt-5  bg-yellow-300 dark:focus: dark:bg-darkblue"></span>
               <span className="relative"> Alperen</span>
-            </motion.span>
+            </span>
             ,
             <br /> {t('h-2')}
           </h2>
 
-          <p className="my-3 text-base text-center dark:text-darkp text-lightp xl:text-xl md:text-left">
+          <p className=" text-base -mb-3 md:-mb-3 text-center dark:text-darkp text-lightp xl:text-xl md:text-left">
             <br /> {t('p-1')}
           </p>
-          <p className="my-3 text-base text-center dark:text-darkp text-lightp xl:text-xl md:text-left">
+          <p className=" text-base text-center dark:text-darkp text-lightp xl:text-xl md:text-left">
             <br /> {t('p-2')}
           </p>
-        </motion.div>
+        </div>
         <div className="mt-4">
           <a href="#_" className="relative ">
             <span className="absolute -top-4 left-0 w-full h-14 mt-1 ml-1 bg-yellow-300 rounded dark:bg-darkblue"></span>
@@ -82,7 +60,7 @@ const Hero = (props) => {
       >
         {theme === 'dark' ? (
           <img
-            className="object-cover object-center"
+            className="  object-cover object-center"
             src="/heroimgdark.svg"
             alt="heroimgdark"
           />

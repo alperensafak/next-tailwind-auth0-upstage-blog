@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps, router }) {
           }
         }}
       >
-        <main className="h-full dark:bg-darkbg">
+        <main>
           <Component {...pageProps} />
         </main>
       </motion.div>

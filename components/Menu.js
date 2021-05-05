@@ -27,14 +27,13 @@ const Menu = () => {
       y: '0',
       opacity: 1,
       transition: {
-        ease: 'easeInOut',
-        duration: 0.5
+        duration: 0.3
       }
     },
     closed: {
       y: '-100vh',
       opacity: 0,
-      transition: { ease: 'easeInOut', duration: 0.3 }
+      transition: { duration: 0.3 }
     }
   }
 
@@ -51,10 +50,9 @@ const Menu = () => {
       y: 0,
       opacity: 1,
       transition: {
-        delay: 0.5,
+        delay: 0.3,
         duration: 0.5,
-        stiffness: 1000,
-        velocity: -400
+        stiffness: 1000
       }
     },
     closed: {
@@ -89,7 +87,7 @@ const Menu = () => {
         />
       </motion.svg>
       <motion.div
-        className=" bg-yellow-300 h-screen w-screen fixed z-30 left-0 top-0 flex flex-col justify-center items-center space-y-12 dark:bg-darkblue lg:text-8xl sm:text-6xl text-4xl "
+        className=" bg-yellow-300 h-screen w-screen fixed z-30 left-0 top-0 flex flex-col justify-center items-center  dark:bg-darkblue lg:text-8xl sm:text-6xl text-4xl "
         initial={false}
         variants={menuVariants}
         animate={isOpen ? 'opened' : 'closed'}
@@ -133,15 +131,19 @@ const Menu = () => {
             </motion.h1>
           </a>
         </Link>
-        <motion.h1
-          variants={variants}
-          animate={isOpen ? 'opened' : 'closed'}
-          whileHover={menuItemHover}
-          whileTap={menuItemTap}
-          className="text-black hover:text-white font-title"
-        >
-          {t('nav4')}
-        </motion.h1>
+        <Link href="/projects">
+          <a>
+            <motion.h1
+              variants={variants}
+              animate={isOpen ? 'opened' : 'closed'}
+              whileHover={menuItemHover}
+              whileTap={menuItemTap}
+              className="text-black hover:text-white font-title"
+            >
+              {t('nav4')}
+            </motion.h1>
+          </a>
+        </Link>
         <motion.h1
           variants={variants}
           animate={isOpen ? 'opened' : 'closed'}

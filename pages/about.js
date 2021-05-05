@@ -63,37 +63,6 @@ function About(props) {
               </div>
             </div>
           </div>
-
-          <div>
-            <h1 className="text-3xl font-bold ml-4">timeline example</h1>
-
-            <div className="border-l-8 ml-10 border-red-400 flex flex-col">
-              <div className="h-32 flex items-center">
-                <span className="w-8 h-8 bg-white border-4 border-red-400 rounded-full -ml-5"></span>
-                <span className="pl-16">1000</span>
-              </div>
-
-              <div className="h-32 flex items-center">
-                <span className="w-8 h-8 bg-white border-4 border-red-400 rounded-full -ml-5"></span>
-                <span className="pl-16">2000</span>
-              </div>
-
-              <div className="h-32 flex items-center">
-                <span className="w-8 h-8 bg-white border-4 border-red-400 rounded-full -ml-5"></span>
-                <span className="pl-16">3000</span>
-              </div>
-
-              <div className="h-32 flex items-center">
-                <span className="w-8 h-8 bg-white border-4 border-red-400 rounded-full -ml-5"></span>
-                <span className="pl-16">4000</span>
-              </div>
-
-              <div className="h-32 flex items-center">
-                <span className="w-8 h-8 bg-white border-4 border-red-400 rounded-full -ml-5"></span>
-                <span className="pl-16">5000</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

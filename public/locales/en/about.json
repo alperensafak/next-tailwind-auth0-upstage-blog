@@ -1,5 +1,25 @@
-  
 {
 
-  "title": "About"
+"title": "About",
+"aboutme": "I am from Kırıkkale. I am living in Izmir. I am interested in web technologies. I am keen on new technologies and I like learning. I do freelance web and graphic works. The movie is unknown, I like watching movies, sports, foods and video games.", 
+"education":"Education",
+"highschool":"Kırıkkale Anatolian High School",
+"university":"Dokuz Eylul University",
+"department":"Computer Engineering",
+"experience":"Experience",
+"experience-1":"Graphic Designer",
+"corp-1":"Jackson's",
+"location-1":"Izmir",
+"date-1":"2014 - 2017",
+"experience-2":"Head of Engineering in Medicine&Biology Society",
+"corp-2":"IEEE DEU Student Branch",
+"location-2":"Dokuz Eylül University, Izmir",
+"date-2":"2017 - 2018",
+"experience-3":"Intern",
+"corp-3":"General Directorate Of State Airports Authority",
+"department-3":"Information Technologies",
+"location-3":"Adnan Menderes Airport, Izmir",
+"date-3":"June 2018 - July 2018"
+
+
 }

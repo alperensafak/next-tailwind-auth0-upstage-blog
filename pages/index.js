@@ -1,13 +1,9 @@
-import Hero from '../components/Hero'
-import Header from '../components/Header'
+import Hero from '../components/Hero/'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useRouter } from 'next/router'
-import { useTranslation } from 'next-i18next'
-import Link from 'next/link'
+
 import React from 'react'
 
-function HomePage(props) {
-  const router = useRouter()
+function HomePage() {
   return (
     <>
       <Hero />
@@ -16,7 +12,7 @@ function HomePage(props) {
 }
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['common', 'menu']))
+    ...(await serverSideTranslations(locale, ['hero', 'menu']))
   }
 })
 export default HomePage

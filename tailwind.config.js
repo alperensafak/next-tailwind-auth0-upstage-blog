@@ -10,7 +10,8 @@ module.exports = {
         lightp: '#404040'
       },
       fontFamily: {
-        title: ['Arapey', 'serif']
+        title: ['Arapey', 'serif'],
+        textfont: ['Inter', 'sans-serif']
       }
     }
   },

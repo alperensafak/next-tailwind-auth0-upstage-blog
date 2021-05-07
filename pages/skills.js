@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 const Skills = () => {
   return (
     <>
-      {' '}
       <div className="wrap w-screen h-screen overflow-hidden relative text-center flex flex-row flex-wrap  ">
         <div className="list h-screen overflow-x-hidden   pt-36 pr-64 pb-64 lg:ml-72 lg:mt-24    ">
           <div className="item relative inline-block w-full w-48 h-48 m-7 ">

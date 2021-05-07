@@ -1,5 +1,22 @@
-  
 {
-
-  "title": "Hakkımda"
+"title": "Hakkımda",
+"aboutme": "Kırıkkaleliyim. İzmir'de yaşıyorum. Web teknolojileriyle ilgiliyim. Yeni teknolojilere meraklıyım ve öğrenmeyi seviyorum. Freelance web ve grafik işleri yapıyorum. Film izlemeyi, sporu, yemekleri ve bilgisayar oyunlarını seviyorum.", 
+"education":"Eğitim",
+"highschool":"Kırıkkale Anadolu Lisesi",
+"university":"Dokuz Eylül Üniversitesi",
+"department":"Bilgisayar Mühendisliği",
+"experience":"Deneyim",
+"experience-1":"Grafiker",
+"corp-1":"Jackson's",
+"location-1":"İzmir",
+"date-1":"2014 - 2017",
+"experience-2":"Başkan - Tıp ve Biyoloji Mühendisliği Topluluğu ",
+"corp-2":"IEEE DEU Öğrenci Topluluğu",
+"location-2":"Dokuz Eylül Üniversitesi, İzmir",
+"date-2":"2017 - 2018",
+"experience-3":"Stajyer",
+"corp-3":"Devlet Hava Meydanları İşletmesi Genel Müdürlüğü",
+"department-3":"Bilişim Teknolojileri",
+"location-3":"Adnan Menderes Havaalanı, İzmir",
+"date-3":"Haziran 2018 - Temmuz 2018"
 }

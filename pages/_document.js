@@ -8,11 +8,22 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en" className="light">
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Arapey&display=swap"
+            rel="stylesheet"
+          />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+            rel="stylesheet"
+          />
+
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
             rel="stylesheet"
           />
         </Head>

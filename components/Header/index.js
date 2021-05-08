@@ -9,10 +9,10 @@ export default function Header() {
   const [switchSound] = useSound('/sound/switchsound.mp3')
   const { theme, setTheme } = useTheme()
   return (
-    <header>
-      <div className="container mx-auto flex  p-5 flex-col md:flex-row  border-2">
+    <header className="sticky z-40 bg-white dark:bg-darkbg top-0 ">
+      <div className="container mx-auto flex  px-5 py-3   flex-col md:flex-row relative border-2 ">
         <Menu />
-        <div className="ml-auto flex flex-wrap items-center text-base justify-center space-x-4 border-2 ">
+        <div className="ml-auto flex flex-wrap items-center text-base justify-center space-x-4">
           <ThemeToggle sound={switchSound} />
           <LanguageToggle sound={switchSound} />
         </div>

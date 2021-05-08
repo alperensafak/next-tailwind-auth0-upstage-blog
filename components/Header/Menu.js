@@ -56,26 +56,21 @@ const Menu = () => {
     }
   }
 
-  const canvasStyle = {}
-
   const menuButtonStyle = {
     cursor: 'pointer'
   }
 
   return (
     <>
-      <div style={canvasStyle}>
-        <MenuButton
-          className="fixed z-50  text-yellow-300"
-          isOpen={isOpen}
-          onClick={() => setIsOpen(!isOpen)}
-          strokeWidth="3"
-          lineProps={{ strokeLinecap: 'round' }}
-          transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-          style={menuButtonStyle}
-        />
-      </div>
-
+      <MenuButton
+        className=" absolute z-50 h-6 w-8 "
+        isOpen={isOpen}
+        onClick={() => setIsOpen(!isOpen)}
+        strokeWidth="2"
+        lineProps={{ strokeLinecap: 'round' }}
+        transition={{ type: 'spring', stiffness: 260, damping: 20 }}
+        style={menuButtonStyle}
+      />
       <motion.div
         className=" bg-yellow-300 h-screen w-screen fixed z-30 left-0 top-0 flex flex-col justify-center items-center  dark:bg-darkblue lg:text-8xl sm:text-6xl text-4xl "
         initial={false}
@@ -134,15 +129,32 @@ const Menu = () => {
             </motion.h1>
           </a>
         </Link>
-        <motion.h1
-          variants={variants}
-          animate={isOpen ? 'opened' : 'closed'}
-          whileHover={menuItemHover}
-          whileTap={menuItemTap}
-          className="text-black hover:text-white font-title"
-        >
-          {t('nav5')}
-        </motion.h1>
+        <Link href="/blog">
+          <a>
+            <motion.h1
+              variants={variants}
+              animate={isOpen ? 'opened' : 'closed'}
+              whileHover={menuItemHover}
+              whileTap={menuItemTap}
+              className="text-black hover:text-white font-title"
+            >
+              {t('nav5')}
+            </motion.h1>
+          </a>
+        </Link>
+        <Link href="/bookmarks">
+          <a>
+            <motion.h1
+              variants={variants}
+              animate={isOpen ? 'opened' : 'closed'}
+              whileHover={menuItemHover}
+              whileTap={menuItemTap}
+              className="text-black hover:text-white font-title"
+            >
+              {t('nav6')}
+            </motion.h1>
+          </a>
+        </Link>
       </motion.div>
     </>
   )

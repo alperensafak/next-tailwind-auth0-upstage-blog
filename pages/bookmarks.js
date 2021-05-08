@@ -1,15 +1,14 @@
 import React from 'react'
-
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Skillls from '../components/Skills'
+import Projects from './projects'
 
-const Skills = () => {
-  return <Skillls />
+const Bookmarks = () => {
+  return <div></div>
 }
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['menu', 'skills']))
+    ...(await serverSideTranslations(locale, ['menu']))
   }
 })
 
-export default Skills
+export default Bookmarks

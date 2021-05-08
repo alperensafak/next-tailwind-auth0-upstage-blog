@@ -1,4 +1,6 @@
 import React from 'react'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import Projects from './projects'
 
 function Blog(props) {
   return (
@@ -10,5 +12,10 @@ function Blog(props) {
     </div>
   )
 }
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['menu']))
+  }
+})
 
 export default Blog

@@ -40,11 +40,8 @@ const HeroText = () => {
           <br className=" inline-block" />
           {t('h-3')}
         </h1>
-        <p className="text-xl leading-relaxed text-lightp  dark:text-darkp font-textfont  mb-8 ">
-          {t('p-1')}
-          <br className=" inline-block" />
-          {t('p-2')}
-        </p>
+        <p className="text-xl text-color  mb-8 ">{t('p-1')} </p>
+        <p className="text-xl text-color  mb-8 ">{t('p-2')}</p>
 
         <div className="flex justify-center space-x-4">
           <a href="https://github.com/alperensafak" target="_blank">

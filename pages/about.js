@@ -1,12 +1,12 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import React from 'react'
-import Abbout from '../components/About'
+import AboutMe from '../components/About'
 
 function About(props) {
   return (
     <>
-      <Abbout />
+      <AboutMe />
     </>
   )
 }

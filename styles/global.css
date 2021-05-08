@@ -81,7 +81,7 @@ h-full w-1 bg-gray-200  dark:bg-darkp pointer-events-none
         width: 60%;
 
     webkit-transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
-    transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
+    transform: rotateX(35deg) rotateY(3deg) rotateZ(10deg);
 
 }
 .wrap .list::-webkit-scrollbar {

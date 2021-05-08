@@ -29,7 +29,7 @@ export const skills = [
   },
   {
     name: 'Redis',
-    location: '/skills/Redis.png'
+    location: '/skills/redis.png'
   },
   {
     name: 'Git',

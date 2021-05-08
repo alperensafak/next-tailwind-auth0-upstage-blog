@@ -28,7 +28,7 @@ const HeroText = () => {
   const { t } = useTranslation('hero')
   return (
     <>
-      <div className="lg:flex-grow  md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center border-2">
+      <div className="lg:flex-grow  md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ">
         <h1 className="  xl:text-6xl lg:text-4xl text-3xl mb-4 font-title font-bold text-black dark:text-white">
           {t('h-1')}
           <WavingHand /> {t('h-2')}{' '}

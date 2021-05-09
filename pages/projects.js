@@ -1,8 +1,8 @@
 import React from 'react'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-
+import Project from '../components/Projects'
 const Projects = () => {
-  return <div></div>
+  return <Project />
 }
 export const getStaticProps = async ({ locale }) => ({
   props: {

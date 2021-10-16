@@ -1,9 +1,10 @@
 import React from 'react'
-import { useTranslation } from 'next-i18next'
+
 import { motion } from 'framer-motion'
+import { useTranslation } from 'next-i18next'
 
 const Blog = () => {
-  const { t } = useTranslation('about')
+  const { t } = useTranslation('blog')
   return (
     <section>
       <div className="container px-5 py-14 mx-auto">

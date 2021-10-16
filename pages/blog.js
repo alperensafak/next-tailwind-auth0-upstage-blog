@@ -1,7 +1,6 @@
-import React from 'react'
-import Posts from '../components/blog'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Projects from './projects'
+import React from 'react'
+import Posts from '../components/Blog'
 
 function Blog(props) {
   return (
@@ -10,9 +9,10 @@ function Blog(props) {
     </>
   )
 }
+
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['menu']))
+    ...(await serverSideTranslations(locale, ['blog', 'menu']))
   }
 })
 

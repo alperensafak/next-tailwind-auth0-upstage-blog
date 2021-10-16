@@ -20,6 +20,10 @@ export const skills = [
     location: '/skills/next.png'
   },
   {
+    name: 'React Native',
+    location: '/skills/reactnative.png'
+  },
+  {
     name: 'Angular',
     location: '/skills/angular.png'
   },
@@ -80,7 +84,7 @@ export const skills = [
     location: '/skills/bootstrap.png'
   },
   {
-    name: 'Styled-Components',
+    name: 'Styled Comp.',
     location: '/skills/styledcomponents.png'
   },
   {
@@ -98,6 +102,10 @@ export const skills = [
   {
     name: 'After Effects',
     location: '/skills/ae.png'
+  },
+  {
+    name: 'GCP',
+    location: '/skills/gcp.png'
   },
   {
     name: 'AWS',

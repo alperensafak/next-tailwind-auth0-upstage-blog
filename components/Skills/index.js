@@ -8,8 +8,8 @@ const Skills = () => {
   return (
     <>
       <div className="container px-5 pt-14  mx-auto">
-        <div className="flex flex-wrap  w-full ">
-          <div className="lg:w-1/3 w-full mb-6 ">
+        <div className="flex flex-wrap w-full mb-20">
+          <div className="lg:w-1/2 w-full mb-6 lg:mb-0 ">
             <h1 className="  text-5xl  font-title font-bold text-black dark:text-white">
               <span className="relative inline-block  ">
                 <span className="absolute  w-full h-[calc(100%-1.3rem)] mt-5  bg-yellow-300 dark:focus: dark:bg-darkblue"></span>
@@ -17,34 +17,33 @@ const Skills = () => {
               </span>
             </h1>
           </div>
-          <div className=" lg:w-2/3 w-full h-screen    b-32 fixed">
-            <div className="wrap w-full h-full overflow-hidden md:pl-32  xl:pl-64 pb-32   fixed  ">
-              <div className="list h-full overflow-x-hidden   fixed pb-32   ">
-                {skills.map((item, index) => (
-                  <div
-                    key={index}
-                    className="item relative inline-block w-full w-48 h-48 m-7  shadow-lg  "
-                  >
-                    <motion.div
-                      whileHover={{
-                        scale: 0.5
-                      }}
-                      className=" w-full h-full bg-white px-2 relative z-30 bg-center  "
-                    >
-                      <img
-                        className="w-full h-full bg-cover relative z-30 bg-center  "
-                        src={`${item.location}`}
-                      />
-                    </motion.div>
-                    <small className=" absolute  z-20 left-0 md:bottom-0 w-full text-center text-2xl text-color ">
-                      {item.name}
-                    </small>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+
+          <p className="lg:w-1/2 w-full text-xl  mb-8  text-color">
+            {t('about')}
+          </p>
         </div>
+
+        {skills.map((item, index) => (
+          <div
+            key={index}
+            className=" relative inline-block  w-36 h-36   m-7 shadow-lg"
+          >
+            <motion.div
+              whileHover={{
+                scale: 0.5
+              }}
+              className=" w-full h-full bg-white px-2 relative z-30 bg-center rounded-2xl  "
+            >
+              <img
+                className="w-full h-full bg-cover relative z-30 bg-center rounded-lg skew-y-12 "
+                src={`${item.location}`}
+              />
+            </motion.div>
+            <small className=" absolute  z-20 left-0 md:bottom-0 w-full text-center text-lg text-color ">
+              {item.name}
+            </small>
+          </div>
+        ))}
       </div>
     </>
   )

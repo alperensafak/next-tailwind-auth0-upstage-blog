@@ -16,6 +16,7 @@ const About = () => {
               </span>
             </h1>
           </div>
+
           <p className="lg:w-1/2 w-full text-xl  mb-8  text-color">
             {t('aboutme')}
           </p>
@@ -81,7 +82,32 @@ const About = () => {
 
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0 mt-8 ">
             <h1 className="text-title mt-8 mb-12 ">{t('experience')}</h1>
+            <div className="flex relative pt-10 pb-20 sm:items-center md:w-8/9 ">
+              <div className="h-full w-6 absolute inset-0 flex items-center justify-center ">
+                <div className="line"></div>
+              </div>
+              <div className="dot" />
 
+              <div className="flex-grow  md:pl-8 pl-6 flex  items-start flex-col sm:flex-row  ">
+                <div className=" flex-shrink-0 w-40 h-40 inline-flex items-center justify-center ">
+                  <motion.img
+                    whileHover={{ scale: 1.3 }}
+                    className="  object-scale-down h-full   "
+                    src="/about/kk.png"
+                    alt="dhmi"
+                  />
+                </div>
+                <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                  <h2 className="font-bold leading-relaxed  text-xl dark:text-white">
+                    {t('experience-4')}
+                  </h2>
+                  <p className="font-semibold text-color">{t('corp-4')}</p>
+                  <p className="text-color">{t('department-4')}</p>
+                  <p className="text-color">{t('date-4')}</p>
+                  <p className="text-color">{t('location-4')}</p>
+                </div>
+              </div>
+            </div>
             <div className="flex relative pt-10 pb-20 sm:items-center md:w-8/9 ">
               <div className="h-full w-6 absolute inset-0 flex items-center justify-center ">
                 <div className="line"></div>

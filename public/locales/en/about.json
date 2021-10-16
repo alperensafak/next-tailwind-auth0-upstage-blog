@@ -5,7 +5,7 @@
 "education":"Education",
 "highschool":"Kırıkkale Anatolian High School",
 "university":"Dokuz Eylul University",
-"department":"Computer Engineering",
+"department":"Computer Engineering",	
 "experience":"Experience",
 "experience-1":"Graphic Designer",
 "corp-1":"Jackson's",
@@ -19,7 +19,10 @@
 "corp-3":"General Directorate Of State Airports Authority",
 "department-3":"Information Technologies",
 "location-3":"Adnan Menderes Airport, Izmir",
-"date-3":"June 2018 - July 2018"
-
-
+"date-3":"June 2018 - July 2018",
+"experience-4":"Intern",
+"corp-4":"Kentkart",
+"department-4":"Back-End Developer(Node.js, EJS, SemanticUI)",
+"location-4":"Konak, Izmir",
+"date-4":"May 2021 - August 2021"
 }

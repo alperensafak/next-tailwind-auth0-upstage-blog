@@ -40,7 +40,7 @@
     }
 
 
-/*    Header*/
+    /*    Header*/
     .switch{
         @apply
         inline-flex w-12 h-6  rounded-full focus:outline-none transition-colors px-0.5 py-0.5 bg-yellow-300 dark:bg-darkblue
@@ -51,15 +51,15 @@
     }
 
 
-/*    ABOUT*/
+    /*    ABOUT*/
 
     .dot{
         @apply
         flex-shrink-0 w-6 h-6 rounded-full mt-16 sm:mt-0  bg-yellow-300 dark:bg-darkblue  relative z-10
     }
     .line{
-@apply
-h-full w-1 bg-gray-200  dark:bg-darkp pointer-events-none
+        @apply
+        h-full w-1 bg-gray-200  dark:bg-darkp pointer-events-none
     }
 }
 
@@ -67,25 +67,5 @@ h-full w-1 bg-gray-200  dark:bg-darkp pointer-events-none
 
 
 
-/*Skills page perspective*/
-.wrap {
-
-
-
-    -webkit-perspective: 2500px;
-    perspective: 2500px;
-    -webkit-perspective-origin: 100% 50%;
-    perspective-origin: 100% 50%;
-}
-.wrap .list {
-        width: 60%;
-
-    webkit-transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
-    transform: rotateX(35deg) rotateY(3deg) rotateZ(10deg);
-
-}
-.wrap .list::-webkit-scrollbar {
-    display: none;
-}
 
 

@@ -17,7 +17,7 @@ export const projects = [
   {
     id: 2,
     name: 'Snippet App',
-    image_path: '/images/snippetapp.png',
+    image_path: '/images/SnippetApp.png',
     deployed_url: '',
     github_url: '',
     github_frontend: 'https://github.com/alperensafak/snippet-app-frontend',

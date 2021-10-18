@@ -6,7 +6,7 @@ const Projects = () => {
 }
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['menu']))
+    ...(await serverSideTranslations(locale, ['projects', 'menu']))
   }
 })
 export default Projects

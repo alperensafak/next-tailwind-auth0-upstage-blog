@@ -129,7 +129,7 @@ const Menu = () => {
             </motion.h1>
           </a>
         </Link>
-        <Link href="/blog">
+        {/* <Link href="/blog">
           <a>
             <motion.h1
               variants={variants}
@@ -141,8 +141,8 @@ const Menu = () => {
               {t('nav5')}
             </motion.h1>
           </a>
-        </Link>
-        <Link href="/bookmarks">
+        </Link>*/}
+        {/* <Link href="/bookmarks">
           <a>
             <motion.h1
               variants={variants}
@@ -154,7 +154,7 @@ const Menu = () => {
               {t('nav6')}
             </motion.h1>
           </a>
-        </Link>
+        </Link>*/}
       </motion.div>
     </>
   )

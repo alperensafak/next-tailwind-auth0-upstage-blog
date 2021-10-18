@@ -16,6 +16,7 @@
     "framer-motion": "^4.1.11",
     "next": "^11.1.2",
     "next-i18next": "^8.2.0",
+    "next-mdx": "^0.6.1",
     "next-themes": "0.0.14",
     "prettier": "^2.2.1",
     "react": "^17.0.2",
@@ -24,8 +25,11 @@
     "use-sound": "^3.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
     "@tailwindcss/jit": "^0.1.18",
     "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
     "postcss": "^8.2.13",
     "tailwindcss": "^2.1.2"
   }

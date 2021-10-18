@@ -7,7 +7,8 @@ import { motion } from 'framer-motion'
 import { useTranslation } from 'next-i18next'
 
 export default function projects() {
-  const { t } = useTranslation('about')
+  const { t } = useTranslation('projects')
+
   const [projects, setProjects] = useState(projectsData)
   const [active, setActive] = useState('all')
   const [showDetail, setShowDetail] = useState(null)

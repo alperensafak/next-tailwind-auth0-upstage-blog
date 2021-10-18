@@ -3,6 +3,7 @@ import { MdClose } from 'react-icons/md'
 import Image from 'next/image'
 import { fadeInUp, stagger } from './animation'
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/router'
 
 export default function ProjectCard({
   showDetail,
@@ -13,11 +14,15 @@ export default function ProjectCard({
     category,
     deployed_url,
     description,
+    descriptiontr,
     github_url,
+    github_frontend,
+    github_backend,
     key_techs,
     id
   }
 }) {
+  const router = useRouter()
   return (
     <>
       <Image
@@ -33,7 +38,7 @@ export default function ProjectCard({
 
       <p className="my-2 text-center text-black">{name}</p>
       {showDetail === id && (
-        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 dark:bg-black-100 dark:text-gray-100 md:grid-cols-2 gap-x-12 ">
+        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 dark:bg-black-100  md:grid-cols-2 gap-x-12 ">
           <motion.div variants={stagger} initial="initial" animate="animate">
             <motion.div
               className="border-4 border-gray-100 "
@@ -53,18 +58,52 @@ export default function ProjectCard({
               className="flex justify-center my-4 space-x-3"
               variants={fadeInUp}
             >
-              <a
-                href={github_url}
-                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-300 rounded-sm text-black dark:bg-black-500 "
-              >
-                <AiFillGithub /> <span>Github</span>
-              </a>
-              <a
-                href={deployed_url}
-                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-300 text-black rounded-sm dark:bg-black-500"
-              >
-                <AiFillProject /> <span>Project</span>
-              </a>
+              {github_frontend ? (
+                <>
+                  <a
+                    href={github_frontend}
+                    target="_blank"
+                    className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-300 rounded-sm text-black dark:bg-black-500 "
+                  >
+                    <AiFillGithub /> <span>Front-end</span>
+                  </a>
+                </>
+              ) : null}
+
+              {github_backend ? (
+                <>
+                  <a
+                    href={github_backend}
+                    target="_blank"
+                    className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-300 rounded-sm text-black dark:bg-black-500 "
+                  >
+                    <AiFillGithub /> <span>Back-end</span>
+                  </a>
+                </>
+              ) : null}
+
+              {github_url ? (
+                <>
+                  <a
+                    href={github_url}
+                    target="_blank"
+                    className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-300 rounded-sm text-black dark:bg-black-500 "
+                  >
+                    <AiFillGithub /> <span>Github</span>
+                  </a>
+                </>
+              ) : null}
+              {deployed_url ? (
+                <>
+                  <a
+                    href={deployed_url}
+                    target="_blank"
+                    className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-300 text-black rounded-sm dark:bg-black-500"
+                  >
+                    <AiFillProject /> <span>Project</span>
+                  </a>
+                </>
+              ) : null}
             </motion.div>
           </motion.div>
           <motion.div variants={stagger} initial="initial" animate="animate">
@@ -78,7 +117,7 @@ export default function ProjectCard({
               variants={fadeInUp}
               className="my-3 text-base text-black font-medium"
             >
-              {description}
+              {router.locale === 'en' ? description : descriptiontr}
             </motion.h3>
 
             <motion.div

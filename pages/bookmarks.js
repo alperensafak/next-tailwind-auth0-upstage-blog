@@ -1,9 +1,13 @@
 import React from 'react'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Projects from './projects'
+import Bookmark from '../components/Bookmarks'
 
 const Bookmarks = () => {
-  return <div></div>
+  return (
+    <>
+      <Bookmark />
+    </>
+  )
 }
 export const getStaticProps = async ({ locale }) => ({
   props: {

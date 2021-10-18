@@ -4,13 +4,14 @@ export const skills = [
     location: '/skills/js.png'
   },
   {
-    name: 'React',
-    location: '/skills/react.png'
-  },
-  {
     name: 'NodeJs',
     location: '/skills/nodejs.png'
   },
+  {
+    name: 'React',
+    location: '/skills/react.png'
+  },
+
   {
     name: 'ExpressJs',
     location: '/skills/expressjs.png'
@@ -23,10 +24,7 @@ export const skills = [
     name: 'React Native',
     location: '/skills/reactnative.png'
   },
-  {
-    name: 'Angular',
-    location: '/skills/angular.png'
-  },
+
   {
     name: 'MongoDB',
     location: '/skills/mongodb.png'
@@ -44,8 +42,34 @@ export const skills = [
     location: '/skills/redux.png'
   },
   {
+    name: 'TypeScript',
+    location: '/skills/ts.png'
+  },
+  {
+    name: 'GraphQL',
+    location: '/skills/graphql.png'
+  },
+  {
+    name: 'NestJs',
+    location: '/skills/nestjs.png'
+  },
+
+  {
+    name: 'Angular',
+    location: '/skills/angular.png'
+  },
+
+  {
     name: 'Jest',
     location: '/skills/jest.png'
+  },
+  {
+    name: 'GCP',
+    location: '/skills/gcp.png'
+  },
+  {
+    name: 'AWS',
+    location: '/skills/aws.png'
   },
   {
     name: 'MySql',
@@ -56,13 +80,14 @@ export const skills = [
     location: '/skills/postgresql.png'
   },
   {
-    name: 'Framer Motion',
-    location: '/skills/framer.png'
-  },
-  {
     name: 'tailwindCSS',
     location: '/skills/tailwind.png'
   },
+  {
+    name: 'Framer Motion',
+    location: '/skills/framer.png'
+  },
+
   {
     name: 'HTML5',
     location: '/skills/html5.png'
@@ -103,14 +128,7 @@ export const skills = [
     name: 'After Effects',
     location: '/skills/ae.png'
   },
-  {
-    name: 'GCP',
-    location: '/skills/gcp.png'
-  },
-  {
-    name: 'AWS',
-    location: '/skills/aws.png'
-  },
+
   {
     name: 'Docker',
     location: '/skills/docker.png'
@@ -122,9 +140,5 @@ export const skills = [
   {
     name: 'Apollo',
     location: '/skills/apollo.png'
-  },
-  {
-    name: 'GraphQL',
-    location: '/skills/graphql.png'
   }
 ]

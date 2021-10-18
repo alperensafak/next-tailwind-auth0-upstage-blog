@@ -22,28 +22,29 @@ const Skills = () => {
             {t('about')}
           </p>
         </div>
-
-        {skills.map((item, index) => (
-          <div
-            key={index}
-            className=" relative inline-block  w-36 h-36   m-7 shadow-lg"
-          >
-            <motion.div
-              whileHover={{
-                scale: 0.5
-              }}
-              className=" w-full h-full bg-white px-2 relative z-30 bg-center rounded-2xl  "
+        <div className="    items-center text-center ">
+          {skills.map((item, index) => (
+            <div
+              key={index}
+              className=" relative inline-block  w-36 h-36  mx-2 my-5  md:m-7 shadow-lg"
             >
-              <img
-                className="w-full h-full bg-cover relative z-30 bg-center rounded-lg skew-y-12 "
-                src={`${item.location}`}
-              />
-            </motion.div>
-            <small className=" absolute  z-20 left-0 md:bottom-0 w-full text-center text-lg text-color ">
-              {item.name}
-            </small>
-          </div>
-        ))}
+              <motion.div
+                whileHover={{
+                  scale: 0.5
+                }}
+                className=" w-full h-full bg-white px-2 relative z-30 bg-center rounded-2xl  "
+              >
+                <img
+                  className="w-full h-full bg-cover p-2 relative z-30 bg-center rounded-lg skew-y-12 "
+                  src={`${item.location}`}
+                />
+              </motion.div>
+              <small className=" absolute  z-20 left-0 md:bottom-0 w-full text-center text-lg text-color ">
+                {item.name}
+              </small>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   )

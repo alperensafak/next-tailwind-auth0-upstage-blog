@@ -61,6 +61,13 @@
         @apply
         h-full w-1 bg-gray-200  dark:bg-darkp pointer-events-none
     }
+
+
+    .card
+    {
+
+
+    }
 }
 
 

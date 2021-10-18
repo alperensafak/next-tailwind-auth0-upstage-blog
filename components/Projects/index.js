@@ -53,13 +53,13 @@ export default function projects() {
             variants={stagger}
             initial="initial"
             animate="animate"
-            className="relative grid grid-cols-12 gap-4 my-3"
+            className="relative grid grid-cols-12 gap-4 my-3 border-2 border-black"
           >
             {projects.map((project) => (
               <motion.div
                 variants={fadeInUp}
                 key={project.id}
-                className="col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200"
+                className=" col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200 "
               >
                 <ProjectCard
                   project={project}

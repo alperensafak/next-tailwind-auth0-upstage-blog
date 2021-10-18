@@ -133,7 +133,11 @@ const HeroText = () => {
         </div>
 
         <div className="mt-8">
-          <a href="/cv/Alperen_Safak_cv.pdf" className="relative ">
+          <a
+            href="/cv/Alperen_Safak_cv.pdf"
+            className="relative "
+            target="_blank"
+          >
             <span className="absolute -top-4 left-0 w-full h-14 mt-1 ml-1 bg-yellow-300 rounded dark:bg-darkblue"></span>
             <span className="relative inline-block w-48 h-full px-5 py-3 text-base font-bold font-textfont bg-white border-2 border-black rounded fold-bold hover:bg-yellow-300 hover:text-white dark:hover:text-white dark:hover:bg-darkblue dark:text-black">
               <span className="flex items-center md:justify-start justify-center space-x-3 ">

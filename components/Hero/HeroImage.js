@@ -6,7 +6,7 @@ const HeroImage = () => {
   const { theme, setTheme } = useTheme()
   return (
     <>
-      <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
+      <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-4 ">
         <motion.div
           className="max-w-lg w-full "
           whileHover={{

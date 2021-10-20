@@ -28,8 +28,8 @@ export default function projects() {
   }
   return (
     <>
-      <div className="container px-5 py-14 mx-auto">
-        <div className="flex flex-wrap w-full mb-20">
+      <div className="container px-5 sm:py-14 mx-auto">
+        <div className="flex flex-wrap w-full mb-6">
           <h1 className="  text-5xl  font-title font-bold text-black dark:text-white">
             <span className="relative inline-block  ">
               <span className="absolute  w-full h-[calc(100%-1.3rem)] mt-5  bg-yellow-300 dark:focus: dark:bg-darkblue"></span>
@@ -53,7 +53,7 @@ export default function projects() {
             variants={stagger}
             initial="initial"
             animate="animate"
-            className="relative grid grid-cols-12 gap-4 my-3 border-2 border-black"
+            className="relative grid grid-cols-12 gap-4 my-3"
           >
             {projects.map((project) => (
               <motion.div

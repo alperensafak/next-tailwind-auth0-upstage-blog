@@ -31,6 +31,21 @@ export const projects = [
     key_techs: ['Node', 'Express', 'MongoDB', 'React', 'Redux', 'Material UI']
   },
   {
+    id: 12,
+    name: 'User Api',
+    image_path: '/images/api.png',
+    deployed_url: '',
+    github_url: 'https://github.com/alperensafak/nestjs-example',
+
+    category: ['nestJS', 'typescript', 'mongoDB'],
+    description:
+      'Api example. Include services, controllers, modules. CRUD operations, validations, queries. Authorization with JWT.',
+    descriptiontr:
+      'Api örneği. Servis-Controller-Module yapısı. CRUD operasyonları, validation, query ve JWT kullanılarak auth işlemleri.  ',
+
+    key_techs: ['NestJS', 'Typescript', 'MongoDB']
+  },
+  {
     id: 3,
     name: 'Personal Web Page',
     image_path: '/images/PersonalWebPage.png',
@@ -59,6 +74,19 @@ export const projects = [
 
     key_techs: ['React', 'Material UI', 'ApexCharts.js']
   },
+  {
+    id: 6,
+    name: 'Actors Api',
+    description:
+      'Actors – Movies API with Node.js, Express, PostgreSQL and Knex',
+    descriptiontr:
+      'Node.js, Express, PostgreSQL ve Knex kullanılarak oluşturulan Aktör - Film Api',
+    image_path: '/images/api.png',
+    deployed_url: '',
+    github_url: 'https://github.com/alperensafak/actors-api-express',
+    category: ['node', 'postgreSQL'],
+    key_techs: ['Node', 'Express', 'PostgreSQL', 'Knex']
+  },
 
   {
     id: 5,
@@ -73,19 +101,7 @@ export const projects = [
       'React hooks ve glassmorphism dizayn ile oluşturulmuş yapılacaklar listesi uygulaması.',
     key_techs: ['React', 'CSS']
   },
-  {
-    id: 6,
-    name: 'Actors Api',
-    description:
-      'Actors – Movies API with Node.js, Express, PostgreSQL and Knex',
-    descriptiontr:
-      'Node.js, Express, PostgreSQL ve Knex kullanılarak oluşturulan Aktör - Film Api',
-    image_path: '/images/api.png',
-    deployed_url: '',
-    github_url: 'https://github.com/alperensafak/actors-api-express',
-    category: ['node', 'postgreSQL'],
-    key_techs: ['Node', 'Express', 'PostgreSQL', 'Knex']
-  },
+
   {
     id: 7,
     name: 'Text-Comment App',
@@ -98,22 +114,6 @@ export const projects = [
     github_url: 'https://github.com/alperensafak/react-text-comment-frontend',
     category: ['react', 'semanticUI'],
     key_techs: ['React', 'Semantic UI']
-  },
-  {
-    id: 8,
-    name: 'Northwind',
-    image_path: '/images/ReduxNorthwind.png',
-    deployed_url: '',
-    github_url: 'https://github.com/alperensafak/redux-northwind',
-
-    category: ['react', 'redux'],
-    description:
-      '\n' +
-      'An application that categorizes products, provides CRUD operations and has the ability to add to cart.',
-    descriptiontr:
-      'Ürünleri kategorilendiren, CRUD operasyonları sağlayan ve sepete ekleme özelliği bulunan uygulama.',
-
-    key_techs: ['React', 'Redux', 'Bootstrap']
   },
   {
     id: 9,
@@ -131,6 +131,23 @@ export const projects = [
 
     key_techs: ['Node', 'Express', 'Mongo']
   },
+  {
+    id: 8,
+    name: 'Northwind',
+    image_path: '/images/ReduxNorthwind.png',
+    deployed_url: '',
+    github_url: 'https://github.com/alperensafak/redux-northwind',
+
+    category: ['react', 'redux'],
+    description:
+      '\n' +
+      'An application that categorizes products, provides CRUD operations and has the ability to add to cart.',
+    descriptiontr:
+      'Ürünleri kategorilendiren, CRUD operasyonları sağlayan ve sepete ekleme özelliği bulunan uygulama.',
+
+    key_techs: ['React', 'Redux', 'Bootstrap']
+  },
+
   {
     id: 10,
     name: 'Single Page Portfolio',

@@ -7,8 +7,8 @@ const Skills = () => {
   const { t } = useTranslation('skills')
   return (
     <>
-      <div className="container px-5 pt-14  mx-auto">
-        <div className="flex flex-wrap w-full mb-20">
+      <div className="container px-5 sm:pt-14  mx-auto">
+        <div className="flex flex-wrap w-full mb-8 sm:mb-20">
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0 ">
             <h1 className="  text-5xl  font-title font-bold text-black dark:text-white">
               <span className="relative inline-block  ">

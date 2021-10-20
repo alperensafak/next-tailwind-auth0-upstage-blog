@@ -29,10 +29,7 @@ export const skills = [
     name: 'MongoDB',
     location: '/skills/mongodb.png'
   },
-  {
-    name: 'Redis',
-    location: '/skills/redis.png'
-  },
+
   {
     name: 'Git',
     location: '/skills/git.png'
@@ -57,6 +54,10 @@ export const skills = [
   {
     name: 'Angular',
     location: '/skills/angular.png'
+  },
+  {
+    name: 'Redis',
+    location: '/skills/redis.png'
   },
 
   {

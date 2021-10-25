@@ -14,15 +14,17 @@ export default function ProjectsNavbar(props) {
       <NavItem value="all" {...props} />
       <NavItem value="node" {...props} />
       <NavItem value="nestJS" {...props} />
+      <NavItem value="graphQL" {...props} />
       <NavItem value="typescript" {...props} />
       <NavItem value="react" {...props} />
       <NavItem value="redux" {...props} />
       <NavItem value="mongoDB" {...props} />
       <NavItem value="postgreSQL" {...props} />
+      <NavItem value="nextJs" {...props} />
       <NavItem value="tailwindCSS" {...props} />
       <NavItem value="semanticUI" {...props} />
       <NavItem value="materialUI" {...props} />
-      <NavItem value="nextJs" {...props} />
+      <NavItem value="styled-Components" {...props} />
     </div>
   )
 }

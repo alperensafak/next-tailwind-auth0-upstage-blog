@@ -4,10 +4,14 @@ import { motion } from 'framer-motion'
 import { appWithTranslation } from 'next-i18next'
 import Header from '../components/Header'
 import React from 'react'
-
+import Head from 'next/head'
 function MyApp({ Component, pageProps, router }) {
   return (
     <>
+      <Head>
+        <title>Alperen Şafak</title>
+      </Head>
+
       <ThemeProvider attribute="class">
         <Header />
 

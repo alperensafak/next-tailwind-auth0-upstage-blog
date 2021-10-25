@@ -30,6 +30,21 @@ export const projects = [
 
     key_techs: ['Node', 'Express', 'MongoDB', 'React', 'Redux', 'Material UI']
   },
+
+  {
+    id: 3,
+    name: 'Personal Web Page',
+    image_path: '/images/PersonalWebPage.png',
+    deployed_url: 'https://alperensafak.com/',
+    github_url:
+      'https://github.com/alperensafak/next-tailwind-auth0-upstage-blog',
+
+    category: ['react', 'nextJs', 'tailwindCSS'],
+    description: 'My personal web page.',
+    descriptiontr: 'Kişisel web sayfam.',
+
+    key_techs: ['React', 'NextJs', 'Tailwind CSS', 'Framer Motion']
+  },
   {
     id: 12,
     name: 'User Api',
@@ -46,18 +61,18 @@ export const projects = [
     key_techs: ['NestJS', 'Typescript', 'MongoDB']
   },
   {
-    id: 3,
-    name: 'Personal Web Page',
-    image_path: '/images/PersonalWebPage.png',
-    deployed_url: 'https://alperensafak.com/',
-    github_url:
-      'https://github.com/alperensafak/next-tailwind-auth0-upstage-blog',
+    id: 13,
+    name: 'Joke App',
+    image_path: '/images/JokeApp.png',
+    deployed_url: 'https://joke-app-one.vercel.app/',
+    github_url: 'https://github.com/alperensafak/joke-app',
+    category: ['react', 'typescript', 'typescript', 'styled-Components'],
+    description:
+      'Joke App with React, Typescript and Styled-components. Jokes are from jokeapi.dev',
+    descriptiontr:
+      'React, Typescript ve Styled-components kullanılarak oluşturulmuş bir şaka uygulaması. Şakalar jokeapi.dev adresinden alınmıştır. ',
 
-    category: ['react', 'nextJs', 'tailwindCSS'],
-    description: 'My personal web page.',
-    descriptiontr: 'Kişisel web sayfam.',
-
-    key_techs: ['React', 'NextJs', 'Tailwind CSS', 'Framer Motion']
+    key_techs: ['React', 'Typescript', 'Styled-Components']
   },
 
   {
@@ -72,20 +87,7 @@ export const projects = [
     descriptiontr:
       'Her ülkenin vaka, iyileşen ve ölüm sayılarını görebileceğiniz uygulama.',
 
-    key_techs: ['React', 'Material UI', 'ApexCharts.js']
-  },
-  {
-    id: 6,
-    name: 'Actors Api',
-    description:
-      'Actors – Movies API with Node.js, Express, PostgreSQL and Knex',
-    descriptiontr:
-      'Node.js, Express, PostgreSQL ve Knex kullanılarak oluşturulan Aktör - Film Api',
-    image_path: '/images/api.png',
-    deployed_url: '',
-    github_url: 'https://github.com/alperensafak/actors-api-express',
-    category: ['node', 'postgreSQL'],
-    key_techs: ['Node', 'Express', 'PostgreSQL', 'Knex']
+    key_techs: ['React', 'Material UI', 'ApexCharts']
   },
 
   {
@@ -103,6 +105,33 @@ export const projects = [
   },
 
   {
+    id: 15,
+    name: 'Pet Api',
+    image_path: '/images/api.png',
+    github_url:
+      'https://github.com/alperensafak/pet-store-api-nestjs-graphql-typeorm',
+    category: ['nestJS', 'typescript', 'graphQL'],
+    description:
+      'Pet Api with CRUD operations, queries, database integration, validations, mutations, pet/owner relationship.',
+    descriptiontr:
+      'CRUD işlemleri, sorgular, veritabanı entegrasyonu, validasyonlar, evcil hayvan/sahip ilişkisi.',
+    key_techs: ['NestJS', 'TypeScript', 'GraphQL', 'TypeORM']
+  },
+
+  {
+    id: 14,
+    name: 'Crypto App',
+    image_path: '/images/crypto.png',
+    github_url: 'https://github.com/alperensafak/graphql-react-apollo-astradb',
+    category: ['react', 'graphQL'],
+    description:
+      'Crypto App with GraphQL, React, Apollo and DataStax Astra Database',
+    descriptiontr:
+      'GraphQL, React, Apollo ve DataStax Astra Database ile oluşturulmuş Crypto uygulaması.',
+    key_techs: ['React', 'GraphQL', 'Apollo', 'DataStax Astra DB']
+  },
+
+  {
     id: 7,
     name: 'Text-Comment App',
     description:
@@ -115,22 +144,7 @@ export const projects = [
     category: ['react', 'semanticUI'],
     key_techs: ['React', 'Semantic UI']
   },
-  {
-    id: 9,
-    name: 'Question-Answer Api',
-    image_path: '/images/api.png',
-    deployed_url: '',
-    github_url: 'https://github.com/alperensafak/node-question-answer-api',
 
-    category: ['node', 'mongoDB'],
-    description:
-      '\n' +
-      'REST API that like Stackoverflow with authorization and CRUD operations\n',
-    descriptiontr:
-      'Stackoverflow benzeri, authorization ve CRUD operasyonları bulunan REST API.',
-
-    key_techs: ['Node', 'Express', 'Mongo']
-  },
   {
     id: 8,
     name: 'Northwind',
@@ -146,6 +160,19 @@ export const projects = [
       'Ürünleri kategorilendiren, CRUD operasyonları sağlayan ve sepete ekleme özelliği bulunan uygulama.',
 
     key_techs: ['React', 'Redux', 'Bootstrap']
+  },
+  {
+    id: 6,
+    name: 'Actors Api',
+    description:
+      'Actors – Movies API with Node.js, Express, PostgreSQL and Knex',
+    descriptiontr:
+      'Node.js, Express, PostgreSQL ve Knex kullanılarak oluşturulan Aktör - Film Api',
+    image_path: '/images/api.png',
+    deployed_url: '',
+    github_url: 'https://github.com/alperensafak/actors-api-express',
+    category: ['node', 'postgreSQL'],
+    key_techs: ['Node', 'Express', 'PostgreSQL', 'Knex']
   },
 
   {
@@ -173,5 +200,21 @@ export const projects = [
     descriptiontr:
       'NextJs ve Tailwind CSS ile oluşturulmuş Görev yöneticisi panosu arayüzü',
     key_techs: ['NextJs', 'Tailwind CSS']
+  },
+  {
+    id: 9,
+    name: 'Question-Answer Api',
+    image_path: '/images/api.png',
+    deployed_url: '',
+    github_url: 'https://github.com/alperensafak/node-question-answer-api',
+
+    category: ['node', 'mongoDB'],
+    description:
+      '\n' +
+      'REST API that like Stackoverflow with authorization and CRUD operations\n',
+    descriptiontr:
+      'Stackoverflow benzeri, authorization ve CRUD operasyonları bulunan REST API.',
+
+    key_techs: ['Node', 'Express', 'Mongo']
   }
 ]

@@ -22,7 +22,7 @@ const Skills = () => {
             {t('about')}
           </p>
         </div>
-        <div className="    items-center text-center ">
+        <div className=" items-center text-center ">
           {skills.map((item, index) => (
             <div
               key={index}

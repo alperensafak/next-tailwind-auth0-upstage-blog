@@ -38,7 +38,7 @@ export default function projects() {
           </h1>
         </div>
         <motion.div
-          className="px-5 py-2 "
+          className="px-5 py-2"
           style={{ height: '65vh' }}
           variants={routeFade}
           initial="hidden"
@@ -59,7 +59,7 @@ export default function projects() {
               <motion.div
                 variants={fadeInUp}
                 key={project.id}
-                className=" col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200 "
+                className=" col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-4 lg:col-span-3 dark:bg-dark-200 "
               >
                 <ProjectCard
                   project={project}
